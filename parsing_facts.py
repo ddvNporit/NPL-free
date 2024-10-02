@@ -26,5 +26,4 @@ for cue in ["is", "be", "have", "write", "talk", "talk about"]:
 for statement in uniqueStatements:
     subject, verb, fact = statement
     # print(f" - {fact}")
-    # format_fact = ''.join(fact)
-    print("* entity:", entity, ", cue:", cue, ", fact:", fact)
+    print(*entity, " -> ", *cue, ": ", *fact)
